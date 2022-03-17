@@ -1,0 +1,91 @@
+@import '/styles/_global.scss';
+
+// header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  img {
+    height: 200px;
+  }
+}
+
+// footer
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+// gnb
+nav {
+  margin-bottom: 20px;
+}
+
+// contents
+.contents {
+  margin: 40px 0;
+}
+
+// item-list-wrapper
+.item-list-wrapper {
+
+  .list-item a {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+
+    .item-img {
+      display: block;
+    }
+
+    .item-name {
+      display: block;
+    }
+
+    .item-detail {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .item-price {
+      font-weight: bolder;
+      color: orangered;
+    }
+  }
+}
+
+// item-detail-wrapper
+.item-detail-wrapper {
+  .detail-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .detail-info {
+    margin-left: 20px;
+
+    .detail-name {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .detail-price {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .detail-desc {
+    b {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
