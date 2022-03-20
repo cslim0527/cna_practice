@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Divider } from "semantic-ui-react";
 
 const Item = ({ item }) => {
-  console.log("item", item);
   const { image_link, name, price, description } = item;
   return (
     <article className={"item-detail-wrapper"}>
