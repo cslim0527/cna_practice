@@ -20,6 +20,7 @@ export default function Gnb() {
   }
 
   return (
+
     <Menu inverted>
       <Menu.Item name="home" active={activeItem === "home"} onClick={goLink} />
       <Menu.Item
