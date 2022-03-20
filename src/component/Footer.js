@@ -1,13 +1,14 @@
-import React from "react";
-import { Divider } from "semantic-ui-react";
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <>
-      <Divider />
-      <footer>Next.js practice app by LCS</footer>
-    </>
+    <div
+      style={{
+        marginTop: 40,
+        padding: "40px 0",
+        borderTop: "1px solid #999",
+        textAlign: "center",
+      }}
+    >
+      Copyright © 코딩앙마. All rights reserved.
+    </div>
   );
-};
-
-export default Footer;
+}
