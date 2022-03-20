@@ -3,8 +3,13 @@ import axios from "axios";
 
 import Head from "next/head";
 import Item from "../../src/component/Item";
+import { useRouter } from "next/router";
 
 const Post = ({ item, name }) => {
+  // const router = useRouter();
+  // const { id } = router.query
+  // console.log(router);
+
   return (
     item && (
       <>
@@ -21,6 +26,7 @@ const Post = ({ item, name }) => {
 
 export default Post;
 
+// 서버 사이드 렌더링
 export async function getServerSideProps(context) {
   const id = context.params.id;
   const API_URL = `https://makeup-api.herokuapp.com/api/v1/products/${id}.json`;
