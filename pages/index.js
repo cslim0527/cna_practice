@@ -27,6 +27,7 @@ export default function Home() {
     <div>
       <Head>
         <title>HOME | Next.js</title>
+        <meta name={"description"} content={"메인페이지 입니다."} />
       </Head>
 
       {isLoading ? (
