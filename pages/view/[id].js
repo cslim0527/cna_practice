@@ -4,7 +4,7 @@ import axios from "axios";
 import Head from "next/head";
 import Item from "../../src/component/Item";
 
-const Post = ({ item }) => {
+const Post = ({ item, name }) => {
   return (
     item && (
       <>
@@ -12,6 +12,7 @@ const Post = ({ item }) => {
           <meta name={"description"} content={item.description} />
           <title>Product | {item.name}</title>
         </Head>
+        {name} 환경입니다.
         <Item item={item} />
       </>
     )
@@ -27,7 +28,7 @@ export async function getServerSideProps(context) {
   const res = await axios.get(API_URL);
   const data = res.data;
 
-  return { props: { item: data } };
+  return { props: { item: data, name: process.env.name } };
 }
 
 /*
