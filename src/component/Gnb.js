@@ -21,6 +21,7 @@ const Gnb = () => {
       <Menu inverted>
         <Menu.Item name="home" active={active === "home"} onClick={goLink} />
         <Menu.Item name="shop" active={active === "shop"} onClick={goLink} />
+        <Menu.Item name="admin" active={active === "admin"} onClick={goLink} />
       </Menu>
     </nav>
   );
